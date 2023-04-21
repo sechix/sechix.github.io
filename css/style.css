@@ -28,11 +28,11 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.offcanvas #page {
+.offcanvas2 #page {
   overflow: hidden;
   position: absolute;
 }
-.offcanvas #page:after {
+.offcanvas2 #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
@@ -1052,7 +1052,7 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 
-#fh5co-offcanvas {
+#fh5co-offcanvas2 {
   position: absolute;
   z-index: 1901;
   width: 270px;
@@ -1074,41 +1074,41 @@ input[type="text"] {
   transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-offcanvas {
+  #fh5co-offcanvas2 {
     display: block;
   }
 }
-.offcanvas #fh5co-offcanvas {
+.offcanvas2 #fh5co-offcanvas2 {
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
 }
-#fh5co-offcanvas a {
+#fh5co-offcanvas2 a {
   color: rgba(255, 255, 255, 0.5);
 }
-#fh5co-offcanvas a:hover {
+#fh5co-offcanvas2 a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
-#fh5co-offcanvas ul {
+#fh5co-offcanvas2 ul {
   padding: 0;
   margin: 0;
 }
-#fh5co-offcanvas ul li {
+#fh5co-offcanvas2 ul li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-#fh5co-offcanvas ul li > ul {
+#fh5co-offcanvas2 ul li > ul {
   padding-left: 20px;
   display: none;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a {
+#fh5co-offcanvas2 ul li.offcanvas2-has-dropdown > a {
   display: block;
   position: relative;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+#fh5co-offcanvas2 ul li.offcanvas2-has-dropdown > a:after {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
@@ -1128,7 +1128,7 @@ input[type="text"] {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-offcanvas ul li.offcanvas-has-dropdown.active a:after {
+#fh5co-offcanvas2 ul li.offcanvas2-has-dropdown.active a:after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -1483,6 +1483,31 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.carousel img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+// Elements
+.carousel .section {
+  margin-inline: auto;
+  padding-block: 5rem;
+}
+.fh5co-nav a {
+  text-decoration: none
+}
+.carousel .container {
+  max-width: 75rem;
+  height: auto;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

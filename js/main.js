@@ -26,12 +26,12 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	    var container = $("#fh5co-offcanvas2, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
+	    	if ( $('body').hasClass('offcanvas2') ) {
 
-    			$('body').removeClass('offcanvas');
+    			$('body').removeClass('offcanvas2');
     			$('.js-fh5co-nav-toggle').removeClass('active');
 				
 	    	}
@@ -43,22 +43,22 @@
 	};
 
 
-	var offcanvasMenu = function() {
+	var offcanvas2Menu = function() {
 
-		$('#page').prepend('<div id="fh5co-offcanvas" />');
+		$('#page').prepend('<div id="fh5co-offcanvas2" />');
 		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
-		$('#fh5co-offcanvas').append(clone1);
+		$('#fh5co-offcanvas2').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
-		$('#fh5co-offcanvas').append(clone2);
+		$('#fh5co-offcanvas2').append(clone2);
 
-		$('#fh5co-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#fh5co-offcanvas')
+		$('#fh5co-offcanvas2 .has-dropdown').addClass('offcanvas2-has-dropdown');
+		$('#fh5co-offcanvas2')
 			.find('li')
 			.removeClass('has-dropdown');
 
 		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
+		$('.offcanvas2-has-dropdown').mouseenter(function(){
 			var $this = $(this);
 
 			$this
@@ -77,9 +77,9 @@
 
 		$(window).resize(function(){
 
-			if ( $('body').hasClass('offcanvas') ) {
+			if ( $('body').hasClass('offcanvas2') ) {
 
-    			$('body').removeClass('offcanvas');
+    			$('body').removeClass('offcanvas2');
     			$('.js-fh5co-nav-toggle').removeClass('active');
 				
 	    	}
@@ -93,10 +93,10 @@
 			var $this = $(this);
 
 
-			if ( $('body').hasClass('overflow offcanvas') ) {
-				$('body').removeClass('overflow offcanvas');
+			if ( $('body').hasClass('overflow offcanvas2') ) {
+				$('body').removeClass('overflow offcanvas2');
 			} else {
-				$('body').addClass('overflow offcanvas');
+				$('body').addClass('overflow offcanvas2');
 			}
 			$this.toggleClass('active');
 			event.preventDefault();
@@ -252,7 +252,7 @@
 	
 	$(function(){
 		mobileMenuOutsideClick();
-		offcanvasMenu();
+		offcanvas2Menu();
 		burgerMenu();
 		contentWayPoint();
 		sliderMain();
