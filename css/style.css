@@ -52,11 +52,14 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 a:hover, a:active, a:focus {
   color: #DD356E;
   outline: none;
   text-decoration: none;
 }
+
+.blog-text a { text-decoration: none;}
 
 p {
   margin-bottom: 30px;
